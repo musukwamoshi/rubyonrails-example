@@ -4,7 +4,6 @@ class CreateComments < ActiveRecord::Migration[7.0]
       t.string :commenter_name
       t.text :comment_content
       t.boolean :status
-      t.integer :article_id
       t.references :article, null: false, foreign_key: true
 
       t.timestamps

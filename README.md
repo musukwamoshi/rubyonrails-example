@@ -18,5 +18,14 @@ bin/rails generate model User email:string first_name:string last_name:string  h
 
 bin/rails generate model UserSession user_id:integer user_email:string user:references
 
+Sets up the specified databases in the database.yml file
+rake db:setup
+
 Runs the migration files
 bin/rails db:migrate
+
+Installs the postgres driver for rails
+gem install pg
+
+Starts the application
+bin/rails server
