@@ -24,6 +24,9 @@ rake db:setup
 Runs the migration files
 bin/rails db:migrate
 
+Rolls back a migration. Replace STEP with the number of migrations you want to rollback
+rake db:rollback STEP=1
+
 Installs the postgres driver for rails
 gem install pg
 
