@@ -30,5 +30,10 @@ rake db:rollback STEP=1
 Installs the postgres driver for rails
 gem install pg
 
+Seeds the database with test data
+bin/rails db:seed
+
+Inspects routes
+bin/rails routes
 Starts the application
 bin/rails server
