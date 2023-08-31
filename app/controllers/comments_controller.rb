@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
 
     private
         def comment_params
-            params.require(:comments).permit(:commenter_name, :comment_content)
+            params.require(:comments).permit(:commenter_name, :comment_content, :status)
         end
     
     def destroy

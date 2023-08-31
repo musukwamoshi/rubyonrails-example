@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
   private
     def article_params
       #replace merge with user_id from session
-      params.require(:article).permit(:title, :content).merge({user_id: 2})
+      params.require(:article).permit(:title, :content, :status).merge({user_id: 2})
     end
 
 end

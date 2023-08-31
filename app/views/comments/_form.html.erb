@@ -7,6 +7,11 @@
     <%= form.label :comment_content %><br>
     <%= form.text_area :comment_content %>
   </p>
+
+  <p>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</p>
   <p>
     <%= form.submit %>
   </p>
